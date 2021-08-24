@@ -1,0 +1,23 @@
+
+<div id="wheel-container">
+  <ion-img id="pointer" src="../../../../assets/triangle.png"></ion-img>
+  <ion-img id="wheel" [@spinningWheel]="{value: isSpinning, params:{rotation_number: rotation}}"  src="../../../../assets/wheel.png.png"></ion-img>
+  <ion-button color="light" (click)="onSpin()" [disabled]="isSpinning==='spin'? true : false">
+      {{isSpinning==='spin'? 'WAIT...' : 'SPIN ( -' + spinningCost +' aurum)'}}
+  </ion-button>
+</div>
+
+<div id="hide-background" *ngIf="this.winningMessage != ''"></div>
+
+<ion-card id="winning-screen"  *ngIf="this.winningMessage != ''">
+  <img class="aurum top left" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rewardRarity === 4 || this.winningItem.rewardRarity === 3">
+  <img class="aurum top right" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rewardRarity === 4 || this.winningItem.rewardRarity === 2">
+  <img class="aurum bottom left" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rewardRarity === 4 || this.winningItem.rewardRarity === 2">
+  <img class="aurum bottom right" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rewardRarity === 4 || this.winningItem.rewardRarity === 3">
+  <img class="aurum" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rewardRarity === 4 || this.winningItem.rewardRarity === 1">
+  <ion-text>
+    <h1>{{this.winningMessage}}</h1>
+  </ion-text>
+  
+  <ion-button (click)="resetWheel()">OK</ion-button>
+</ion-card>

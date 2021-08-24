@@ -1,0 +1,32 @@
+{
+  "spinningCost": {
+    "item": "aurum",
+    "amount": 100
+  },
+  "rewardsList": [
+    {"rewardRarity": 0, "item": "aurum", "amount": 0},
+    {"rewardRarity": 1, "item": "aurum", "amount": 50},
+    {"rewardRarity": 3, "item": "aurum", "amount": 500},
+    {"rewardRarity": 3, "item": "aurum", "amount": 200},
+    {"rewardRarity": 0, "item": "aurum", "amount": 0},
+    {"rewardRarity": 1, "item": "aurum", "amount": 50},
+    {"rewardRarity": 2, "item": "aurum", "amount": 100},
+    {"rewardRarity": 4, "item": "aurum", "amount": 5000},
+    {"rewardRarity": 2, "item": "aurum", "amount": 100},
+    {"rewardRarity": 1, "item": "aurum", "amount": 50},
+    {"rewardRarity": 0, "item": "aurum", "amount": 0},
+    {"rewardRarity": 1, "item": "aurum", "amount": 50},
+    {"rewardRarity": 3, "item": "aurum", "amount": 400},
+    {"rewardRarity": 2, "item": "aurum", "amount": 100},
+    {"rewardRarity": 1, "item": "aurum", "amount": 50},
+    {"rewardRarity": 2, "item": "aurum", "amount": 100},
+    {"rewardRarity": 0, "item": "aurum", "amount": 0},
+    {"rewardRarity": 3, "item": "aurum", "amount": 500},
+    {"rewardRarity": 0, "item": "aurum", "amount": 0},
+    {"rewardRarity": 2, "item": "aurum", "amount": 100},
+    {"rewardRarity": 3, "item": "aurum", "amount": 300},
+    {"rewardRarity": 3, "item": "aurum", "amount": 200},
+    {"rewardRarity": 0, "item": "aurum", "amount": 0},
+    {"rewardRarity": 3, "item": "aurum", "amount": 300}
+  ]
+}
