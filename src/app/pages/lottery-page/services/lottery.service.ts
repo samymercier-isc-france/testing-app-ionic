@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Aurums } from '../models/aurums';
+import { Item } from '../models/item';
 import { SpinResult } from '../models/spin-result';
 import { WheelInformations } from '../models/wheel-informations';
 
@@ -11,10 +11,10 @@ import { WheelInformations } from '../models/wheel-informations';
 export class LotteryService {
   constructor(private httpClient: HttpClient) { }
 
-  //returns the amount of aurums
-  getAurums = () :Observable<Aurums> => {
-    return this.httpClient.get<Aurums>(`assets/fakeAPI/aurums.json`,{responseType: 'json'});
-  }
+//  //returns the amount of aurums
+//  getAurums = () :Observable<Aurums> => {
+//    return this.httpClient.get<Aurums>(`assets/fakeAPI/aurums.json`,{responseType: 'json'});
+//  }
 
   //get informations about the wheel
   getWheelInfo = ():Observable<WheelInformations> => {

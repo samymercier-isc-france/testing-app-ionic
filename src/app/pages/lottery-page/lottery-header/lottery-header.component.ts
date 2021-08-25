@@ -12,8 +12,8 @@ export class LotteryHeaderComponent implements OnInit {
   constructor(public lotteryService: LotteryService) { }
 
   ngOnInit(): void {
-    this.lotteryService.getAurums().subscribe(data => {
-      this.amountOfAurum = data.aurums;
-    })
+    // this.lotteryService.getAurums().subscribe(data => {
+    //   this.amountOfAurum = data.aurums;
+    // })
   }
 }
