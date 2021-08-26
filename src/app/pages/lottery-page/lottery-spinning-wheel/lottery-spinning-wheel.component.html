@@ -10,11 +10,11 @@
 <div id="hide-background" *ngIf="this.winningMessage != ''"></div>
 
 <ion-card id="winning-screen"  *ngIf="this.winningMessage != ''">
-  <img class="aurum top left" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rewardRarity === 4 || this.winningItem.rewardRarity === 3">
-  <img class="aurum top right" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rewardRarity === 4 || this.winningItem.rewardRarity === 2">
-  <img class="aurum bottom left" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rewardRarity === 4 || this.winningItem.rewardRarity === 2">
-  <img class="aurum bottom right" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rewardRarity === 4 || this.winningItem.rewardRarity === 3">
-  <img class="aurum" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rewardRarity === 4 || this.winningItem.rewardRarity === 1">
+  <img class="aurum top left" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rarity === 4 || this.winningItem.rarity === 3">
+  <img class="aurum top right" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rarity === 4 || this.winningItem.rarity === 2">
+  <img class="aurum bottom left" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rarity === 4 || this.winningItem.rarity === 2">
+  <img class="aurum bottom right" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rarity === 4 || this.winningItem.rarity === 3">
+  <img class="aurum" src="../../../../assets/aurum.png" *ngIf="this.winningItem.rarity === 4 || this.winningItem.rarity === 1">
   <ion-text>
     <h1>{{this.winningMessage}}</h1>
   </ion-text>

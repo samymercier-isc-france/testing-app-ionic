@@ -1,10 +1,12 @@
+import { Item } from "./item";
+
 export class Reward {
-    rewardRarity: number;
-    item: string;
+    rarity: number;
+    item: Item;
     amount: number;
 
-    constructor(rewardRarity: number, item: string, amount: number){
-        this.rewardRarity = rewardRarity;
+    constructor(rarity: number, item: Item, amount: number){
+        this.rarity = rarity;
         this.item = item;
         this.amount =amount;
     }

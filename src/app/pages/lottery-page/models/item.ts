@@ -1,5 +1,5 @@
 export class Item {
-    private itemId: number;
+    public itemId: number;
     private slots: number;
     private sort: number;
     private maxUpgrade: number;
